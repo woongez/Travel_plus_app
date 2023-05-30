@@ -46,7 +46,7 @@ class _LoginState extends State<Login> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (BuildContext context) => LoginComplete(),
+            builder: (BuildContext context) => LoginComplete(user_Id: id),
           ),
         );
       } else {

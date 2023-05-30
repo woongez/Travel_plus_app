@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import '../mainPage.dart';
 
 class LoginComplete extends StatelessWidget {
+  final String user_Id;
 
-  LoginComplete();
+  LoginComplete({required this.user_Id});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class LoginComplete extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              '환영합니다 !',
+              '환영합니다, $user_Id님!',
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 16),
